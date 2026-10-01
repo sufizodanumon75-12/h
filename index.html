@@ -1,23 +1,27 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/output.css" rel="stylesheet">
-</head>
-<body>
-  <header class="hidden lg:flex justify-evenly items-center p-5">
-    <p>Сеть клиник Томской области</p>
-    <div class="justify-between flex gap-5">
-        <img src="./image/i.svg" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="hidden lg:flex justify-evenly items-center p-5">
+      <p>Сеть клиник Томской области</p>
+      <div class="justify-between flex gap-5">
+        <img src="./image/i.svg" alt="" />
         <p>Версия для слабовидящих</p>
-    </div>
-    <p>+ 7 (978) 00-00-000</p>
-    <button class="border-none bg-green-600 text-white rounded-2xl pl-2 pr-2 p-1">Записаться на прием</button>
-  </header>
-  <header class="flex justify-between p-5">
-    <img src="./image/im.svg" alt="">
-    <nav class="hidden lg:flex justify-evenly items-center gap-5">
+      </div>
+      <p>+ 7 (978) 00-00-000</p>
+      <button
+        class="border-none bg-green-600 text-white rounded-2xl pl-2 pr-2 p-1"
+      >
+        Записаться на прием
+      </button>
+    </header>
+    <header class="flex justify-between p-5">
+      <img src="./image/im.svg" alt="" />
+      <nav class="hidden lg:flex justify-evenly items-center gap-5">
         <p>Врачи</p>
         <p>Услуги</p>
         <p>Диагностика</p>
@@ -27,15 +31,239 @@
         <p>О клинике</p>
         <p>Отзывы</p>
         <p>Контакты</p>
-    </nav>
-    <button class="lg:hidden"><img src="./image/b.svg" alt=""></button>
-  </header>
-  <section class="flex justify-start items-center gap-4">
-    <p>Главная</p>
-    <img src="./image/strela.svg" alt="">
-    <p>Анализы</p>
-  </section>
-  <p class="p-5 text-3xl">Анализы</p>
-  <section></section>
-</body>
+      </nav>
+      <button class="lg:hidden"><img src="./image/b.svg" alt="" /></button>
+    </header>
+    <section class="flex justify-start items-center gap-4">
+      <p>Главная</p>
+      <img src="./image/strela.svg" alt="" />
+      <p>Анализы</p>
+    </section>
+    <p class="p-5 text-3xl">Анализы</p>
+    <section class="flex lg:justify-evenly gap-5 flex-col lg:flex-row">
+      <div
+        class="bg-green-400 text-white rounded-2xl flex flex-col items-center gap-5"
+      >
+        <div>
+          <p class="text-2xl">Скидка -20% на МРТ</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            amet dolor sed mi tincidunt pharetra montes. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Viverra amet dolor sed mi
+            tincidunt pharetra montes.
+          </p>
+          <p>Акция действует до</p>
+          <p>22.03.2023</p>
+          <button class="text-green-700 flex gap-5 bg-white rounded-2xl p-2">
+            Подробнее <img src="./image/strela.svg" alt="" />
+          </button>
+        </div>
+        <img src="./image/mrt.svg" alt="" />
+      </div>
+      <div
+        class="bg-blue-400 text-white rounded-2xl flex flex-col items-center gap-5"
+      >
+        <div>
+          <p class="text-2xl">Скидка -20% на МРТ</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            amet dolor sed mi tincidunt pharetra montes. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Viverra amet dolor sed mi
+            tincidunt pharetra montes.
+          </p>
+          <p>Акция действует до</p>
+          <p>22.03.2023</p>
+          <button class="text-green-700 flex gap-5 bg-white rounded-2xl p-2">
+            Подробнее <img src="./image/strela.svg" alt="" />
+          </button>
+        </div>
+        <img src="./image/mrt.svg" alt="" />
+      </div>
+    </section>
+    <p class="text-3xl p-10">Как получить лечение?</p>
+    <section
+      class="flex p-10 lg:justify-evenly flex-col items-center lg:flex-row gap-5"
+    >
+      <div class="rounded-2xl shadow-2xl shadow-gray-500 p-5">
+        <img src="./image/p.svg" alt="" />
+        <p>
+          Узнайте, входит ли интересующее вас лечение в программу для вашего
+          региона
+        </p>
+      </div>
+      <div class="rounded-2xl shadow-2xl shadow-gray-500 p-5">
+        <img src="./image/p1.svg" alt="" />
+        <p>Подготовьте необходимые документы и отправьте заявку на лечение</p>
+      </div>
+      <div class="rounded-2xl shadow-2xl shadow-gray-500 p-5">
+        <img src="./image/p2.svg" alt="" />
+        <p>
+          В течение 3-х рабочих дней специалист отдела ОМС свяжется с вами по
+          указанному вами номеру телефона
+        </p>
+      </div>
+    </section>
+    <p class="text-3xl p-10">Популярные анализы</p>
+    <section class="flex flex-col gap-10 lg:flex-row lg:justify-evenly">
+      <div
+        class="lg:w-[30%] border-2 border-gray-300 pl-5 pr-5 m-5 flex flex-col gap-4"
+      >
+        <img class="w-10" src="./image/e1.svg" alt="" />
+        <p class="text-2xl border-b-3 border-b-green-600 text-green-600">
+          Онкология
+        </p>
+        <p>Гистология</p>
+        <p>Онкомаркёры</p>
+        <p>Цитология</p>
+      </div>
+      <div
+        class="lg:w-[30%] border-2 border-gray-300 pl-5 pr-5 m-5 flex flex-col gap-4"
+      >
+        <img class="w-10" src="./image/e2.svg" alt="" />
+        <p class="text-2xl border-b-3 border-b-green-600 text-green-600">
+          Онкология
+        </p>
+        <p>Гистология</p>
+        <p>Онкомаркёры</p>
+        <p>Цитология</p>
+      </div>
+      <div
+        class="lg:w-[30%] border-2 border-gray-300 pl-5 pr-5 m-5 flex flex-col gap-4"
+      >
+        <img class="w-10" src="./image/e3.svg" alt="" />
+        <p class="text-2xl border-b-3 border-b-green-600 text-green-600">
+          Онкология
+        </p>
+        <p>Гистология</p>
+        <p>Онкомаркёры</p>
+        <p>Цитология</p>
+      </div>
+      <div
+        class="lg:w-[30%] border-2 border-gray-300 pl-5 pr-5 m-5 flex flex-col gap-4"
+      >
+        <img class="w-10" src="./image/e4.svg" alt="" />
+        <p class="text-2xl border-b-3 border-b-green-600 text-green-600">
+          Онкология
+        </p>
+        <p>Гистология</p>
+        <p>Онкомаркёры</p>
+        <p>Цитология</p>
+      </div>
+    </section>
+    <section
+      class="flex flex-col lg:flex-row lg:justify-evenly items-center bg-black pl-5"
+    >
+      <div>
+        <h1 class="text-white text-2xl">
+          Виды лабораторных анализов и исследований
+        </h1>
+        <div>
+          <div class="flex-col gap-5 text-white">
+            <p>Виды лабораторных анализов и исследований</p>
+            <p>Биохимические исследования крови</p>
+            <p>Онкомаркёры</p>
+            <p>Общеклинические исследования кала</p>
+            <p>Панели аллергенов</p>
+            <p>Гистологические исследования</p>
+            <p>Гормональные исследования крови</p>
+            <p>Исследования мочи</p>
+            <p>Иммунологические исследования крови</p>
+          </div>
+          <div class="flex-col gap-5 text-white">
+            <p>Виды лабораторных анализов и исследований</p>
+            <p>Биохимические исследования крови</p>
+            <p>Онкомаркёры</p>
+            <p>Общеклинические исследования кала</p>
+            <p>Панели аллергенов</p>
+            <p>Гистологические исследования</p>
+            <p>Гормональные исследования крови</p>
+            <p>Исследования мочи</p>
+            <p>Иммунологические исследования крови</p>
+          </div>
+        </div>
+      </div>
+      <img class="hidden lg:flex" src="./image/devushka.svg" alt="devushka" />
+    </section>
+    <section class="bg-[#F1F5F8]">
+      <h1 class="text-3xl p-7">Наши лицензии</h1>
+      <div class=" lg:hidden flex lg:justify-evenly items-center gap-5">
+        <div class="pb-5">
+          <img src="./image/diplom.svg" alt="" />
+          <img src="./image/diplom.svg" alt="" />
+        </div>
+        <div class="pb-5">
+          <img src="./image/diplom.svg" alt="" />
+          <img src="./image/diplom.svg" alt="" />
+        </div>
+      </div>
+      <div class="hidden lg:flex lg:justify-evenly items-center gap-5">
+          <img src="./image/diplom.svg" alt="" />
+          <img src="./image/diplom.svg" alt="" />
+          <img src="./image/diplom.svg" alt="" />
+          <img src="./image/diplom.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <section class="bg-black text-white flex lg:flex-row justify-evenly flex-col items-center gap-7 m-10 rounded-2xl">
+      <div class="flex flex-col gap-5"><h1>Хотите, мы Вам перезвоним?</h1>
+      <p>Оставьте заявку и мы подробно ответим на все Ваши вопросы!</p>
+      <div class="flex flex-col lg:flex-row lg:justify-evenly gap-7"><div>
+        <label for="">Ваше ФИО</label><br>
+        <input type="text" class="bg-white rounded-2xl" />
+      </div>
+      <div>
+        <label for="">Ваше ФИО</label><br>
+        <input type="number" class="bg-white rounded-2xl">
+      </div></div>
+      <button class="bg-green-600 rounded-2xl pl-10 pr-10 p-2 ">Заказать</button></div>
+      <img class="hidden lg:flex" src="./image/docotor.svg" alt="docotor">
+    </section>
+    <footer class="flex flex-col lg:flex-row lg:justify-evenly bg-green-500 text-white p-5 items-center gap-4">
+        <div class="flex flex-col">
+            <img src="image/im.svg" alt="">
+            <p>Адрес</p>
+            <p>Москва, ул. Пушкина, д.43</p>
+            <p>Телефон</p>
+            <p>+7 (9__) ___-__-__</p>
+            <p>Почта</p>
+            <p>Poshta@gmail.com</p>
+        </div>
+        <div>
+            <h1>О клинике</h1>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+        </div>
+        <div>
+            <h1>О клинике</h1>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+        </div>
+        <div>
+            <h1>О клинике</h1>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+        </div>
+        <div>
+            <h1>О клинике</h1>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+            <p>Название пункта меню</p>
+        </div>
+    </footer>
+  </body>
 </html>
